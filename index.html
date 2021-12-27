@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/62988d1ebe.js"></script>
+
+    <title>Electricity Distribution Report</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+
+            <ul class="nav-links list-unstyled" id="nav-links">
+                <li class="active">
+                    <a href="#"><span class="material-icons sidebar">
+                            dashboard
+                        </span>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"> <span class="material-icons sidebar">
+                            history
+                        </span>Services</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu"> <span class="material-icons sidebar">
+                            bookmarks
+                        </span>Reports</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-icons sidebar">
+                            group</span>Customers</a>
+                </li>
+                <li>
+                    <a href="#"><span class="material-icons sidebar">account_circle</span>Account</a>
+                </li>
+                <li>
+                    <a href="#" class="signout"> <span class="material-icons sidebar">
+                            power_settings_new
+                        </span>Sign out</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button class="hamburger" id="hamburger">
+                        <span class="material-icons  hamburger-icon ">
+                            menu
+                        </span>
+                    </button>
+
+                </div>
+            </nav>
+
+        <div class="date-section">
+            <div class="row">
+                <div class="col">
+                    <p class="title-para"> Eko Electricity Distribution PLc</p>             
+                 </div>
+                <div class="col">
+                    <input type="date" id="today" name="today">
+                </div>
+            </div>
+        </div>
+
+        <div class="barchart-section">
+
+            <div class="barchart part1" id="barchartone">
+            </div>
+
+            <div class="week">
+                <div class="row">
+                    <div class="col two-wks-1">
+                        <p class="last-week"><i class="fa fa-circle" aria-hidden="true"></i>
+                            Last week</p>
+                         <p class="this-week"> <i class="fa fa-circle" aria-hidden="true"></i>
+                            This week</p>
+                    </div>
+                    <div class="col">
+                        <p class="two-wks-2">Week 1 vs Week2</p>                     
+                    </div>
+                </div>            
+            </div>
+
+            <div class="barchart part2" id="barchartwo" >
+
+            </div>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+        <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <!-- <script src="custom_theme.js"></script> -->
+        <script src="https://cdn.anychart.com/themes/2.0.0/dark_blue.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+         <script src="./javascript/report.js"></script>
+</body>
+
+</html>

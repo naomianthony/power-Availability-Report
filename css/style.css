@@ -1,0 +1,163 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height:750px;
+    padding-top: 90px;
+    background: #15175B;
+    color: #C4C4C4;
+    transition: all 0.3s;
+    }
+
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+
+#sidebar.active {
+    margin-left: -250px;
+
+}
+
+
+ ul li {
+    padding: 10px 30px;
+    margin-left: 10px;
+
+}
+
+
+a, a:hover, a:focus {
+    color: #C9C9CD;    
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 12px;
+    font-size:19px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+
+}
+
+a:hover{
+    background-color: #C4C4C4;
+   color:#76769b ; 
+}
+
+.material-icons.sidebar{
+    font-size: 16px!important;
+    padding: 0 5px;
+}
+
+.signout{
+    line-height: 15;
+}
+
+.hamburger{
+    
+    background-color: transparent;
+    border: 0;
+    color: #000;
+    cursor: pointer;
+   } 
+
+.material-icons.hamburger-icon{
+    font-size: 30px!important;
+    font-weight: 900;
+    
+}
+
+.title-para{
+    margin-left: 50px;
+}
+
+#today{
+    background-color: #F1F1F1;
+    margin-left: 350px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+.barchart{
+    width: 800px;
+    height: 300px;
+    margin:40px 50px;
+    padding: 15px;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+
+}
+
+.two-wks-1{
+margin-left:85px;
+}
+
+.two-wks-2{
+    background-color: #F1F1F1;
+    margin-left: 150px;
+    width: 150px;
+    border-radius:10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.last-week > .fa{
+    color: #F802B3;
+}
+
+.this-week > .fa{
+    color: #A101BB;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .div1 , .div3 {
+        display: none;
+    }
+
+    #sidebar {
+        margin-left: -250px;
+        
+    }
+
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    .hamburger{
+        float: left;
+    }
+
+    .title-para{
+        font-size: 12px;
+        margin-left: 30px;
+    }
+    
+    #today{
+        margin-left: 10px;
+    }
+
+
+}
+
